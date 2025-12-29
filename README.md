@@ -1,55 +1,34 @@
-# Secure Python Sandbox Runner
+# Secure Python Sandbox Runner 🛡️
 
-A lightweight sandbox environment for executing untrusted Python scripts with detailed behavior logging and security restrictions.
+**A secure sandbox environment for executing untrusted Python code** with resource limits, behavior logging, restricted imports, and execution safety controls.
 
-## Features
+This project is ideal for:
+- Code execution platforms
+- Online IDEs & judge systems
+- Education & experimentation
+- Safe script execution environments
 
-- **Subprocess Isolation**: Executes untrusted code in a separate subprocess
-- **Resource Limits**: 
-  - Execution timeout
-  - Memory limits
-  - CPU time limits
-- **Import Restrictions**: Monitors and blocks dangerous module imports
-- **File Operation Control**: Logs and optionally blocks file read/write operations
-- **Network Monitoring**: Logs and blocks socket/network operations
-- **Comprehensive Logging**: Tracks all activities including imports, file ops, network attempts, and exceptions
-- **Activity Reports**: Generates detailed JSON reports of all sandbox activities
+---
 
-## Requirements
+## 🛠 Tech Stack
+| Component | Technology |
+|--------|----------|
+| Language | Python |
+| Execution | Subprocess sandboxing |
+| Security Controls | Resource limits, import hooks, file/network restriction |
+| Logging | JSON-based activity reports |
 
-- Python 3.7+
-- Unix-like system (Linux, macOS) for resource limits (Windows support is limited)
+---
 
-## Installation
+## 🔥 Highlights
+- Safe execution for unknown Python scripts
+- Control file access, network calls, imports
+- Execution timeout & memory limit handling
+- Detailed logging + security monitoring
+- CLI & programmatic usage supported
 
-No additional dependencies required - uses only Python standard library.
+---
 
-## Usage
-
-### Command Line
-
-```bash
-# Run a script with default restrictions
-python sandbox_runner.py script.py
-
-# Run with custom timeout and memory limits
-python sandbox_runner.py script.py --timeout 5.0 --memory 64
-
-# Allow file read operations
-python sandbox_runner.py script.py --allow-file-read
-
-# Allow file write operations
-python sandbox_runner.py script.py --allow-file-write
-
-# Allow network operations
-python sandbox_runner.py script.py --allow-network
-
-# Specify restricted imports
-python sandbox_runner.py script.py --restricted-imports os sys subprocess
-
-# Save detailed report to JSON file
-python sandbox_runner.py script.py --report report.json
-```
 
 ### Programmatic API
 
