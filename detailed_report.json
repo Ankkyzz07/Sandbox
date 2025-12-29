@@ -1,0 +1,72 @@
+{
+  "execution_summary": {
+    "duration_seconds": 0.11251997947692871,
+    "total_activities": 2,
+    "start_time": "2025-12-05T04:48:23.269416",
+    "end_time": "2025-12-05T04:48:23.381936"
+  },
+  "imports": {
+    "total": 2,
+    "allowed": 1,
+    "blocked": 1,
+    "details": [
+      {
+        "timestamp": 0.11243534088134766,
+        "type": "import",
+        "details": {
+          "module": "socket",
+          "allowed": false,
+          "reason": "Module 'socket' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.11244797706604004,
+        "type": "import",
+        "details": {
+          "module": "math",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      }
+    ]
+  },
+  "file_operations": {
+    "total": 0,
+    "allowed": 0,
+    "blocked": 0,
+    "details": []
+  },
+  "network_operations": {
+    "total": 0,
+    "allowed": 0,
+    "blocked": 0,
+    "details": []
+  },
+  "exceptions": {
+    "total": 0,
+    "details": []
+  },
+  "resource_limits": {
+    "details": []
+  },
+  "all_activities": [
+    {
+      "timestamp": 0.11243534088134766,
+      "type": "import",
+      "details": {
+        "module": "socket",
+        "allowed": false,
+        "reason": "Module 'socket' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.11244797706604004,
+      "type": "import",
+      "details": {
+        "module": "math",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    }
+  ]
+}

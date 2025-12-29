@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox Runner - Localhost Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        textarea {
+            width: 100%;
+            min-height: 200px;
+            font-family: 'Courier New', monospace;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .output {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        .config {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .config-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .config-item input[type="number"] {
+            width: 80px;
+            padding: 5px;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .status.success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .loading {
+            display: none;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 Secure Python Sandbox Runner</h1>
+        <p>Test the sandbox runner on localhost. Enter Python code below and click "Execute".</p>
+        
+        <div class="config">
+            <div class="config-item">
+                <label>Timeout (seconds):</label>
+                <input type="number" id="timeout" value="10" min="1" max="60">
+            </div>
+            <div class="config-item">
+                <label>Memory (MB):</label>
+                <input type="number" id="memory" value="128" min="64" max="512">
+            </div>
+            <div class="config-item">
+                <input type="checkbox" id="allow_file_read">
+                <label>Allow File Read</label>
+            </div>
+            <div class="config-item">
+                <input type="checkbox" id="allow_file_write">
+                <label>Allow File Write</label>
+            </div>
+            <div class="config-item">
+                <input type="checkbox" id="allow_network">
+                <label>Allow Network</label>
+            </div>
+        </div>
+        
+        <textarea id="code" placeholder="Enter Python code here...">print("Hello from sandbox!")
+result = sum(range(1, 11))
+print(f"Sum of 1 to 10: {result}")
+
+import math
+print(f"Pi: {math.pi}")</textarea>
+        
+        <button onclick="executeCode()">Execute Code</button>
+        <div class="loading" id="loading">Executing...</div>
+        
+        <div id="status"></div>
+        <div id="output" class="output" style="display: none;"></div>
+    </div>
+
+    <script>
+        const SERVER_URL = 'http://localhost:8000';
+
+        async function executeCode() {
+            const code = document.getElementById('code').value;
+            const output = document.getElementById('output');
+            const status = document.getElementById('status');
+            const loading = document.getElementById('loading');
+            
+            output.style.display = 'none';
+            status.innerHTML = '';
+            loading.style.display = 'block';
+            
+            const config = {
+                code: code,
+                timeout: parseFloat(document.getElementById('timeout').value),
+                memory: parseInt(document.getElementById('memory').value),
+                allow_file_read: document.getElementById('allow_file_read').checked,
+                allow_file_write: document.getElementById('allow_file_write').checked,
+                allow_network: document.getElementById('allow_network').checked
+            };
+            
+            try {
+                const response = await fetch(`${SERVER_URL}/execute`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(config)
+                });
+                
+                const result = await response.json();
+                loading.style.display = 'none';
+                
+                let outputText = '';
+                
+                if (result.stdout) {
+                    outputText += 'STDOUT:\n' + result.stdout + '\n\n';
+                }
+                
+                if (result.stderr) {
+                    outputText += 'STDERR:\n' + result.stderr + '\n\n';
+                }
+                
+                outputText += `Execution Time: ${result.execution_time.toFixed(3)}s\n`;
+                outputText += `Success: ${result.success}\n\n`;
+                
+                const report = result.report;
+                outputText += '=== ACTIVITY REPORT ===\n';
+                outputText += `Total Activities: ${report.execution_summary.total_activities}\n`;
+                outputText += `Imports: ${report.imports.total} (allowed: ${report.imports.allowed}, blocked: ${report.imports.blocked})\n`;
+                outputText += `File Operations: ${report.file_operations.total} (allowed: ${report.file_operations.allowed}, blocked: ${report.file_operations.blocked})\n`;
+                outputText += `Network Operations: ${report.network_operations.total} (allowed: ${report.network_operations.allowed}, blocked: ${report.network_operations.blocked})\n`;
+                outputText += `Exceptions: ${report.exceptions.total}\n`;
+                
+                output.textContent = outputText;
+                output.style.display = 'block';
+                
+                status.className = 'status ' + (result.success ? 'success' : 'error');
+                status.textContent = result.success ? '✓ Execution completed successfully' : '✗ Execution failed';
+                
+            } catch (error) {
+                loading.style.display = 'none';
+                status.className = 'status error';
+                status.textContent = `Error: ${error.message}. Make sure the server is running (python sandbox_server.py)`;
+                output.style.display = 'block';
+                output.textContent = `Connection error: ${error.message}`;
+            }
+        }
+        
+        // Check server health on load
+        fetch(`${SERVER_URL}/health`)
+            .then(response => response.json())
+            .then(data => {
+                console.log('Server status:', data);
+            })
+            .catch(error => {
+                console.error('Server not running:', error);
+                document.getElementById('status').innerHTML = 
+                    '<div class="status error">⚠ Server not running. Start it with: python sandbox_server.py</div>';
+            });
+    </script>
+</body>
+</html>
+

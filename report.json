@@ -1,0 +1,1416 @@
+{
+  "execution_summary": {
+    "duration_seconds": 0.2530806064605713,
+    "total_activities": 76,
+    "start_time": "2025-12-05T05:42:15.799208",
+    "end_time": "2025-12-05T05:42:16.052289"
+  },
+  "imports": {
+    "total": 71,
+    "allowed": 55,
+    "blocked": 16,
+    "details": [
+      {
+        "timestamp": 0.2522389888763428,
+        "type": "import",
+        "details": {
+          "module": "socket",
+          "allowed": false,
+          "reason": "Module 'socket' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.25226759910583496,
+        "type": "import",
+        "details": {
+          "module": "_io",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25228214263916016,
+        "type": "import",
+        "details": {
+          "module": "_socket",
+          "allowed": false,
+          "reason": "Module '_socket' matches dangerous pattern 'socket'"
+        }
+      },
+      {
+        "timestamp": 0.2522923946380615,
+        "type": "import",
+        "details": {
+          "module": "_socket",
+          "allowed": false,
+          "reason": "Module '_socket' matches dangerous pattern 'socket'"
+        }
+      },
+      {
+        "timestamp": 0.2523014545440674,
+        "type": "import",
+        "details": {
+          "module": "os",
+          "allowed": false,
+          "reason": "Module 'os' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.25231051445007324,
+        "type": "import",
+        "details": {
+          "module": "sys",
+          "allowed": false,
+          "reason": "Module 'sys' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.2523188591003418,
+        "type": "import",
+        "details": {
+          "module": "io",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25232696533203125,
+        "type": "import",
+        "details": {
+          "module": "selectors",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2523350715637207,
+        "type": "import",
+        "details": {
+          "module": "_io",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25234341621398926,
+        "type": "import",
+        "details": {
+          "module": "abc",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2523512840270996,
+        "type": "import",
+        "details": {
+          "module": "collections",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25235915184020996,
+        "type": "import",
+        "details": {
+          "module": "collections.abc",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2523670196533203,
+        "type": "import",
+        "details": {
+          "module": "math",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25237536430358887,
+        "type": "import",
+        "details": {
+          "module": "select",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2523832321166992,
+        "type": "import",
+        "details": {
+          "module": "sys",
+          "allowed": false,
+          "reason": "Module 'sys' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.25239086151123047,
+        "type": "import",
+        "details": {
+          "module": "enum",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2523989677429199,
+        "type": "import",
+        "details": {
+          "module": "errno",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2524070739746094,
+        "type": "import",
+        "details": {
+          "module": "math",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2524147033691406,
+        "type": "import",
+        "details": {
+          "module": "json",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2524230480194092,
+        "type": "import",
+        "details": {
+          "module": "os",
+          "allowed": false,
+          "reason": "Module 'os' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.25243163108825684,
+        "type": "import",
+        "details": {
+          "module": "subprocess",
+          "allowed": false,
+          "reason": "Module 'subprocess' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.2524392604827881,
+        "type": "import",
+        "details": {
+          "module": "_io",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25244736671447754,
+        "type": "import",
+        "details": {
+          "module": "builtins",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2524549961090088,
+        "type": "import",
+        "details": {
+          "module": "errno",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.252469539642334,
+        "type": "import",
+        "details": {
+          "module": "io",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25247764587402344,
+        "type": "import",
+        "details": {
+          "module": "locale",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2524855136871338,
+        "type": "import",
+        "details": {
+          "module": "_io",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25249338150024414,
+        "type": "import",
+        "details": {
+          "module": "sys",
+          "allowed": false,
+          "reason": "Module 'sys' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.2525010108947754,
+        "type": "import",
+        "details": {
+          "module": "encodings",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25250864028930664,
+        "type": "import",
+        "details": {
+          "module": "encodings.aliases",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2525215148925781,
+        "type": "import",
+        "details": {
+          "module": "re",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2525293827056885,
+        "type": "import",
+        "details": {
+          "module": "_collections_abc",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25254154205322266,
+        "type": "import",
+        "details": {
+          "module": "builtins",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2525496482849121,
+        "type": "import",
+        "details": {
+          "module": "functools",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25255727767944336,
+        "type": "import",
+        "details": {
+          "module": "_locale",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2525649070739746,
+        "type": "import",
+        "details": {
+          "module": "_locale",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.252577543258667,
+        "type": "import",
+        "details": {
+          "module": "os",
+          "allowed": false,
+          "reason": "Module 'os' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.25258517265319824,
+        "type": "import",
+        "details": {
+          "module": "time",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2525930404663086,
+        "type": "import",
+        "details": {
+          "module": "signal",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25260066986083984,
+        "type": "import",
+        "details": {
+          "module": "_io",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.252608060836792,
+        "type": "import",
+        "details": {
+          "module": "_signal",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25261592864990234,
+        "type": "import",
+        "details": {
+          "module": "_signal",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2526235580444336,
+        "type": "import",
+        "details": {
+          "module": "enum",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25263166427612305,
+        "type": "import",
+        "details": {
+          "module": "sys",
+          "allowed": false,
+          "reason": "Module 'sys' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.2526392936706543,
+        "type": "import",
+        "details": {
+          "module": "threading",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25264692306518555,
+        "type": "import",
+        "details": {
+          "module": "_io",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2526545524597168,
+        "type": "import",
+        "details": {
+          "module": "os",
+          "allowed": false,
+          "reason": "Module 'os' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.25266265869140625,
+        "type": "import",
+        "details": {
+          "module": "sys",
+          "allowed": false,
+          "reason": "Module 'sys' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.25267553329467773,
+        "type": "import",
+        "details": {
+          "module": "_thread",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2526836395263672,
+        "type": "import",
+        "details": {
+          "module": "warnings",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25269126892089844,
+        "type": "import",
+        "details": {
+          "module": "time",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2526991367340088,
+        "type": "import",
+        "details": {
+          "module": "_weakrefset",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25270676612854004,
+        "type": "import",
+        "details": {
+          "module": "_io",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2527146339416504,
+        "type": "import",
+        "details": {
+          "module": "_weakref",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25272226333618164,
+        "type": "import",
+        "details": {
+          "module": "types",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2527296543121338,
+        "type": "import",
+        "details": {
+          "module": "itertools",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25273752212524414,
+        "type": "import",
+        "details": {
+          "module": "_collections",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2527453899383545,
+        "type": "import",
+        "details": {
+          "module": "_thread",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2527580261230469,
+        "type": "import",
+        "details": {
+          "module": "_thread",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2527656555175781,
+        "type": "import",
+        "details": {
+          "module": "_thread",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2527732849121094,
+        "type": "import",
+        "details": {
+          "module": "warnings",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2527811527252197,
+        "type": "import",
+        "details": {
+          "module": "contextlib",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2527885437011719,
+        "type": "import",
+        "details": {
+          "module": "time",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25280022621154785,
+        "type": "import",
+        "details": {
+          "module": "types",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2528083324432373,
+        "type": "import",
+        "details": {
+          "module": "fcntl",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2528970241546631,
+        "type": "import",
+        "details": {
+          "module": "msvcrt",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25290513038635254,
+        "type": "import",
+        "details": {
+          "module": "_winapi",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.2529127597808838,
+        "type": "import",
+        "details": {
+          "module": "_winapi",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.25292038917541504,
+        "type": "import",
+        "details": {
+          "module": "os",
+          "allowed": false,
+          "reason": "Module 'os' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.2529563903808594,
+        "type": "import",
+        "details": {
+          "module": "os",
+          "allowed": false,
+          "reason": "Module 'os' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.25298500061035156,
+        "type": "import",
+        "details": {
+          "module": "socket",
+          "allowed": false,
+          "reason": "Module 'socket' is restricted"
+        }
+      }
+    ]
+  },
+  "file_operations": {
+    "total": 4,
+    "allowed": 2,
+    "blocked": 2,
+    "details": [
+      {
+        "timestamp": 0.25293517112731934,
+        "type": "file_operation",
+        "details": {
+          "operation": "read",
+          "path": "test_read.txt",
+          "allowed": false,
+          "reason": "File read operations are disabled (WARNING)"
+        }
+      },
+      {
+        "timestamp": 0.2529478073120117,
+        "type": "file_operation",
+        "details": {
+          "operation": "open",
+          "path": "test_read.txt",
+          "allowed": true,
+          "reason": "Mode: r"
+        }
+      },
+      {
+        "timestamp": 0.25296711921691895,
+        "type": "file_operation",
+        "details": {
+          "operation": "write",
+          "path": "test_write.txt",
+          "allowed": false,
+          "reason": "File write operations are disabled (WARNING)"
+        }
+      },
+      {
+        "timestamp": 0.252976655960083,
+        "type": "file_operation",
+        "details": {
+          "operation": "open",
+          "path": "test_write.txt",
+          "allowed": true,
+          "reason": "Mode: w"
+        }
+      }
+    ]
+  },
+  "network_operations": {
+    "total": 1,
+    "allowed": 0,
+    "blocked": 1,
+    "details": [
+      {
+        "timestamp": 0.25299787521362305,
+        "type": "network",
+        "details": {
+          "operation": "socket_create",
+          "address": "unknown",
+          "allowed": false,
+          "reason": "Network operations are disabled (WARNING)"
+        }
+      }
+    ]
+  },
+  "exceptions": {
+    "total": 0,
+    "details": []
+  },
+  "resource_limits": {
+    "details": []
+  },
+  "all_activities": [
+    {
+      "timestamp": 0.2522389888763428,
+      "type": "import",
+      "details": {
+        "module": "socket",
+        "allowed": false,
+        "reason": "Module 'socket' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.25226759910583496,
+      "type": "import",
+      "details": {
+        "module": "_io",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25228214263916016,
+      "type": "import",
+      "details": {
+        "module": "_socket",
+        "allowed": false,
+        "reason": "Module '_socket' matches dangerous pattern 'socket'"
+      }
+    },
+    {
+      "timestamp": 0.2522923946380615,
+      "type": "import",
+      "details": {
+        "module": "_socket",
+        "allowed": false,
+        "reason": "Module '_socket' matches dangerous pattern 'socket'"
+      }
+    },
+    {
+      "timestamp": 0.2523014545440674,
+      "type": "import",
+      "details": {
+        "module": "os",
+        "allowed": false,
+        "reason": "Module 'os' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.25231051445007324,
+      "type": "import",
+      "details": {
+        "module": "sys",
+        "allowed": false,
+        "reason": "Module 'sys' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.2523188591003418,
+      "type": "import",
+      "details": {
+        "module": "io",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25232696533203125,
+      "type": "import",
+      "details": {
+        "module": "selectors",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2523350715637207,
+      "type": "import",
+      "details": {
+        "module": "_io",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25234341621398926,
+      "type": "import",
+      "details": {
+        "module": "abc",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2523512840270996,
+      "type": "import",
+      "details": {
+        "module": "collections",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25235915184020996,
+      "type": "import",
+      "details": {
+        "module": "collections.abc",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2523670196533203,
+      "type": "import",
+      "details": {
+        "module": "math",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25237536430358887,
+      "type": "import",
+      "details": {
+        "module": "select",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2523832321166992,
+      "type": "import",
+      "details": {
+        "module": "sys",
+        "allowed": false,
+        "reason": "Module 'sys' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.25239086151123047,
+      "type": "import",
+      "details": {
+        "module": "enum",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2523989677429199,
+      "type": "import",
+      "details": {
+        "module": "errno",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2524070739746094,
+      "type": "import",
+      "details": {
+        "module": "math",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2524147033691406,
+      "type": "import",
+      "details": {
+        "module": "json",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2524230480194092,
+      "type": "import",
+      "details": {
+        "module": "os",
+        "allowed": false,
+        "reason": "Module 'os' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.25243163108825684,
+      "type": "import",
+      "details": {
+        "module": "subprocess",
+        "allowed": false,
+        "reason": "Module 'subprocess' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.2524392604827881,
+      "type": "import",
+      "details": {
+        "module": "_io",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25244736671447754,
+      "type": "import",
+      "details": {
+        "module": "builtins",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2524549961090088,
+      "type": "import",
+      "details": {
+        "module": "errno",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.252469539642334,
+      "type": "import",
+      "details": {
+        "module": "io",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25247764587402344,
+      "type": "import",
+      "details": {
+        "module": "locale",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2524855136871338,
+      "type": "import",
+      "details": {
+        "module": "_io",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25249338150024414,
+      "type": "import",
+      "details": {
+        "module": "sys",
+        "allowed": false,
+        "reason": "Module 'sys' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.2525010108947754,
+      "type": "import",
+      "details": {
+        "module": "encodings",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25250864028930664,
+      "type": "import",
+      "details": {
+        "module": "encodings.aliases",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2525215148925781,
+      "type": "import",
+      "details": {
+        "module": "re",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2525293827056885,
+      "type": "import",
+      "details": {
+        "module": "_collections_abc",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25254154205322266,
+      "type": "import",
+      "details": {
+        "module": "builtins",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2525496482849121,
+      "type": "import",
+      "details": {
+        "module": "functools",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25255727767944336,
+      "type": "import",
+      "details": {
+        "module": "_locale",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2525649070739746,
+      "type": "import",
+      "details": {
+        "module": "_locale",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.252577543258667,
+      "type": "import",
+      "details": {
+        "module": "os",
+        "allowed": false,
+        "reason": "Module 'os' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.25258517265319824,
+      "type": "import",
+      "details": {
+        "module": "time",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2525930404663086,
+      "type": "import",
+      "details": {
+        "module": "signal",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25260066986083984,
+      "type": "import",
+      "details": {
+        "module": "_io",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.252608060836792,
+      "type": "import",
+      "details": {
+        "module": "_signal",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25261592864990234,
+      "type": "import",
+      "details": {
+        "module": "_signal",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2526235580444336,
+      "type": "import",
+      "details": {
+        "module": "enum",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25263166427612305,
+      "type": "import",
+      "details": {
+        "module": "sys",
+        "allowed": false,
+        "reason": "Module 'sys' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.2526392936706543,
+      "type": "import",
+      "details": {
+        "module": "threading",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25264692306518555,
+      "type": "import",
+      "details": {
+        "module": "_io",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2526545524597168,
+      "type": "import",
+      "details": {
+        "module": "os",
+        "allowed": false,
+        "reason": "Module 'os' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.25266265869140625,
+      "type": "import",
+      "details": {
+        "module": "sys",
+        "allowed": false,
+        "reason": "Module 'sys' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.25267553329467773,
+      "type": "import",
+      "details": {
+        "module": "_thread",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2526836395263672,
+      "type": "import",
+      "details": {
+        "module": "warnings",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25269126892089844,
+      "type": "import",
+      "details": {
+        "module": "time",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2526991367340088,
+      "type": "import",
+      "details": {
+        "module": "_weakrefset",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25270676612854004,
+      "type": "import",
+      "details": {
+        "module": "_io",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2527146339416504,
+      "type": "import",
+      "details": {
+        "module": "_weakref",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25272226333618164,
+      "type": "import",
+      "details": {
+        "module": "types",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2527296543121338,
+      "type": "import",
+      "details": {
+        "module": "itertools",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25273752212524414,
+      "type": "import",
+      "details": {
+        "module": "_collections",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2527453899383545,
+      "type": "import",
+      "details": {
+        "module": "_thread",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2527580261230469,
+      "type": "import",
+      "details": {
+        "module": "_thread",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2527656555175781,
+      "type": "import",
+      "details": {
+        "module": "_thread",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2527732849121094,
+      "type": "import",
+      "details": {
+        "module": "warnings",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2527811527252197,
+      "type": "import",
+      "details": {
+        "module": "contextlib",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2527885437011719,
+      "type": "import",
+      "details": {
+        "module": "time",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25280022621154785,
+      "type": "import",
+      "details": {
+        "module": "types",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2528083324432373,
+      "type": "import",
+      "details": {
+        "module": "fcntl",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2528970241546631,
+      "type": "import",
+      "details": {
+        "module": "msvcrt",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25290513038635254,
+      "type": "import",
+      "details": {
+        "module": "_winapi",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.2529127597808838,
+      "type": "import",
+      "details": {
+        "module": "_winapi",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.25292038917541504,
+      "type": "import",
+      "details": {
+        "module": "os",
+        "allowed": false,
+        "reason": "Module 'os' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.25293517112731934,
+      "type": "file_operation",
+      "details": {
+        "operation": "read",
+        "path": "test_read.txt",
+        "allowed": false,
+        "reason": "File read operations are disabled (WARNING)"
+      }
+    },
+    {
+      "timestamp": 0.2529478073120117,
+      "type": "file_operation",
+      "details": {
+        "operation": "open",
+        "path": "test_read.txt",
+        "allowed": true,
+        "reason": "Mode: r"
+      }
+    },
+    {
+      "timestamp": 0.2529563903808594,
+      "type": "import",
+      "details": {
+        "module": "os",
+        "allowed": false,
+        "reason": "Module 'os' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.25296711921691895,
+      "type": "file_operation",
+      "details": {
+        "operation": "write",
+        "path": "test_write.txt",
+        "allowed": false,
+        "reason": "File write operations are disabled (WARNING)"
+      }
+    },
+    {
+      "timestamp": 0.252976655960083,
+      "type": "file_operation",
+      "details": {
+        "operation": "open",
+        "path": "test_write.txt",
+        "allowed": true,
+        "reason": "Mode: w"
+      }
+    },
+    {
+      "timestamp": 0.25298500061035156,
+      "type": "import",
+      "details": {
+        "module": "socket",
+        "allowed": false,
+        "reason": "Module 'socket' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.25299787521362305,
+      "type": "network",
+      "details": {
+        "operation": "socket_create",
+        "address": "unknown",
+        "allowed": false,
+        "reason": "Network operations are disabled (WARNING)"
+      }
+    }
+  ]
+}

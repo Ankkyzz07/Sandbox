@@ -1,0 +1,185 @@
+{
+  "execution_summary": {
+    "duration_seconds": 0.11844468116760254,
+    "total_activities": 8,
+    "start_time": "2025-12-05T04:52:27.046082",
+    "end_time": "2025-12-05T04:52:27.164526"
+  },
+  "imports": {
+    "total": 6,
+    "allowed": 2,
+    "blocked": 4,
+    "details": [
+      {
+        "timestamp": 0.11836600303649902,
+        "type": "import",
+        "details": {
+          "module": "socket",
+          "allowed": false,
+          "reason": "Module 'socket' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.11838054656982422,
+        "type": "import",
+        "details": {
+          "module": "math",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.11838603019714355,
+        "type": "import",
+        "details": {
+          "module": "json",
+          "allowed": true,
+          "reason": "Allowed"
+        }
+      },
+      {
+        "timestamp": 0.11838960647583008,
+        "type": "import",
+        "details": {
+          "module": "os",
+          "allowed": false,
+          "reason": "Module 'os' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.1183927059173584,
+        "type": "import",
+        "details": {
+          "module": "subprocess",
+          "allowed": false,
+          "reason": "Module 'subprocess' is restricted"
+        }
+      },
+      {
+        "timestamp": 0.11840534210205078,
+        "type": "import",
+        "details": {
+          "module": "socket",
+          "allowed": false,
+          "reason": "Module 'socket' is restricted"
+        }
+      }
+    ]
+  },
+  "file_operations": {
+    "total": 2,
+    "allowed": 0,
+    "blocked": 2,
+    "details": [
+      {
+        "timestamp": 0.11839818954467773,
+        "type": "file_operation",
+        "details": {
+          "operation": "read",
+          "path": "test_read.txt",
+          "allowed": false,
+          "reason": "File read operations are disabled"
+        }
+      },
+      {
+        "timestamp": 0.11840248107910156,
+        "type": "file_operation",
+        "details": {
+          "operation": "write",
+          "path": "test_write.txt",
+          "allowed": false,
+          "reason": "File write operations are disabled"
+        }
+      }
+    ]
+  },
+  "network_operations": {
+    "total": 0,
+    "allowed": 0,
+    "blocked": 0,
+    "details": []
+  },
+  "exceptions": {
+    "total": 0,
+    "details": []
+  },
+  "resource_limits": {
+    "details": []
+  },
+  "all_activities": [
+    {
+      "timestamp": 0.11836600303649902,
+      "type": "import",
+      "details": {
+        "module": "socket",
+        "allowed": false,
+        "reason": "Module 'socket' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.11838054656982422,
+      "type": "import",
+      "details": {
+        "module": "math",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.11838603019714355,
+      "type": "import",
+      "details": {
+        "module": "json",
+        "allowed": true,
+        "reason": "Allowed"
+      }
+    },
+    {
+      "timestamp": 0.11838960647583008,
+      "type": "import",
+      "details": {
+        "module": "os",
+        "allowed": false,
+        "reason": "Module 'os' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.1183927059173584,
+      "type": "import",
+      "details": {
+        "module": "subprocess",
+        "allowed": false,
+        "reason": "Module 'subprocess' is restricted"
+      }
+    },
+    {
+      "timestamp": 0.11839818954467773,
+      "type": "file_operation",
+      "details": {
+        "operation": "read",
+        "path": "test_read.txt",
+        "allowed": false,
+        "reason": "File read operations are disabled"
+      }
+    },
+    {
+      "timestamp": 0.11840248107910156,
+      "type": "file_operation",
+      "details": {
+        "operation": "write",
+        "path": "test_write.txt",
+        "allowed": false,
+        "reason": "File write operations are disabled"
+      }
+    },
+    {
+      "timestamp": 0.11840534210205078,
+      "type": "import",
+      "details": {
+        "module": "socket",
+        "allowed": false,
+        "reason": "Module 'socket' is restricted"
+      }
+    }
+  ]
+}
